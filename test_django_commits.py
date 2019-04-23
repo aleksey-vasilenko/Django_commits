@@ -10,9 +10,9 @@ driver2.get('https://github.com/django/django')
 commit01 = driver2.find_elements_by_xpath('//*[@id="js-repo-pjax-container"]/div[2]/div[1]/div[6]/div[3]/a')
 
 if commit[0].text == commit01[0].text:
-    print("%(expected)s equals %(actual)s" % {"expected": commit01[0].text, "actual": commit[0].text})
+    print("%(expected)s equals %(actual)s" % {"expected":commit01[0].text, "actual": commit[0].text})
 else:
-    print("%(expected)s not equals %(actual)s" % {"expected": commit01[0].text, "actual": commit[0].text})
+    print("%(expected)s not equals %(actual)s" % {"expected":commit01[0].text, "actual": commit[0].text})
 
 driver.quit()
 driver2.quit()

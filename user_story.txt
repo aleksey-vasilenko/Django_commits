@@ -1,0 +1,15 @@
+User Story
+As a Django user
+I want to see a list of commits on the commit page
+So I can make sure that the last commit in the repository header
+
+Acceptance Criteria
+GIVEN - precondition
+- On the commit page, a list of current commits is displayed
+- The repository page displays the header with a commit
+WHEN - action
+- On the page with commits, we take the last commit
+- On the repository page, we compare this commit with the title
+THEN - result
+- The last commit is always displayed in the repository header
+- Error if the no last commit is displayed in the repository header
